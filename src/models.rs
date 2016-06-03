@@ -9,11 +9,13 @@ pub struct Author {
   pub published: bool,
   pub created_at: PgTimestamp,
   pub updated_at: PgTimestamp,
+  pub middle_name: Option<String>,
 }
 
 #[insertable_into(authors)]
 pub struct NewAuthor<'a> {
   pub first_name: &'a str,
+  pub middle_name: Option<&'a str>,
   pub last_name: &'a str,
   pub created_at: PgTimestamp,
   pub updated_at: PgTimestamp,

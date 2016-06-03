@@ -14,6 +14,17 @@ Based on the [Diesel tutorial](http://diesel.rs/guides/getting-started/) for Rus
 
 Instructions on making it work on stable are at the bottom of the tutorial.
 
+To make a new migration first run:
+
+    diesel migration generate add_blur_to_splurble
+    vi migrations/*!$*/*
+    diesel migration run
+
+There are also
+
+    diesel migration revert
+    diesel migration redo
+
 # Authors
 
 Paul A. Jungwirth

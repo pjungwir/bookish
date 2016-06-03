@@ -42,6 +42,7 @@ pub fn create_author<'a>(conn: &PgConnection,
 
   let a = NewAuthor {
     first_name: first_name,
+    middle_name: None,
     last_name: last_name,
     created_at: PgTimestamp(μs),
     updated_at: PgTimestamp(μs),
