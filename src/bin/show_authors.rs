@@ -9,7 +9,7 @@ fn main() {
   use bookish::schema::authors::dsl::*;
 
   let conn = establish_connection();
-  let results = authors.filter(published.eq(true))
+  let results = authors
     .limit(5)
     .load::<Author>(&conn)
     .expect("Error loading authors");

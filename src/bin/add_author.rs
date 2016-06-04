@@ -2,7 +2,7 @@ extern crate bookish;
 extern crate diesel;
 
 use self::bookish::*;
-use std::io::{stdin, Read};
+use std::io::stdin;
 
 fn main() {
   let conn = establish_connection();

@@ -25,6 +25,17 @@ There are also
     diesel migration revert
     diesel migration redo
 
+# TODO
+
+- Write a more general-purpose updatable method.
+- Add a books table with a foreign key and more CRUD.
+- Use temporal tables.
+- Add a shelves table.
+- Add a rooms table.
+- Write a web interface.
+- Search: on author name, book title
+
+
 # Authors
 
 Paul A. Jungwirth
